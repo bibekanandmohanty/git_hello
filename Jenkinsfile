@@ -12,7 +12,8 @@ pipeline {
         }
         stage('Upload War To Nexus'){
             steps{
-	         def mavenPom =read mavenPom 'pom.xml'
+	         script {
+	         def mavenPom = read mavenPom file: 'pom.xml'
                  nexusArtifactUploader artifacts: [
 		              [
 			         artifactId: 'simple-app',
@@ -28,7 +29,8 @@ pipeline {
 		 protocol: 'http', 
 		 repository: 'CI-SimpleApp',
 		 version: '${mavenPom.version}'
-            }
+                } 
+	    }
         }
     }
 }    
