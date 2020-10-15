@@ -25,7 +25,7 @@ pipeline {
 		 nexusUrl: '157.245.138.63:8081', 
 		 nexusVersion: 'nexus3', 
 		 protocol: 'http', 
-		 repository: 'http://157.245.138.63:8081/repository/CI-SimpleApp',
+		 repository: 'CI-SimpleApp',
 		 version: '3.0.0'
             }
         }
