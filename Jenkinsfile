@@ -24,10 +24,10 @@ pipeline {
 	         ], 
 		 credentialsId: 'nexus',
 		 groupId: 'in.javahome', 
-		 nexusUrl: '157.245.138.63:8081', 
+		 nexusUrl: '68.183.143.105:8000', 
 		 nexusVersion: 'nexus3', 
 		 protocol: 'http', 
-		 repository: 'CI-SimpleApp',
+		 repository: 'CI',
 		 version: '${mavenPom.version}'
                 } 
 	    }
