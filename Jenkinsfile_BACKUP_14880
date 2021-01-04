@@ -20,10 +20,13 @@ pipeline {
 			     ]
 	         ], 
 		 credentialsId: 'nexus12',
+<<<<<<< HEAD
+=======
 		 credentialsId: 'nexus12',
 		 groupId: 'in.javahome', 
 		 groupId: 'in.javahome', 
 		 groupId: 'in.javahome', 
+>>>>>>> 650f82f6e3f48225d5016dfa76b56654d402f18e
 		 groupId: 'in.javahome', 
 		 nexusUrl: '165.227.83.122:8000', 
 		 nexusVersion: 'nexus3', 
